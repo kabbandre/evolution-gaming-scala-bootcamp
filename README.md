@@ -15,7 +15,7 @@ This is my implementation of the home task I was given.
 $ sbt
 ```
 
-3. Compile a project
+3. Compile the project
 ```
 $ sbt
 sbt:scala> compile
@@ -33,7 +33,7 @@ sbt:scala> run
 2h3h4h5d8d KdKs 9hJh
 ```
 
-6. Input empty line to end the stdin loop
+6. Input empty line to end the loop in stdin
 
 7. Output:
 
