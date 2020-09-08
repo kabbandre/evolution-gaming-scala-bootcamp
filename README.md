@@ -45,4 +45,5 @@ $ sbt
 sbt:scala> run --omaha
 ```
 
-# Made by Mihails Jeremejevs (kabbandre@gmail.com)
+# Credits
+Made by Mihails Jeremejevs (kabbandre@gmail.com)
