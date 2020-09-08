@@ -1,0 +1,19 @@
+[debug] Packaging D:\Documents\projects\evolution\scala\target\scala-2.13\scala_2.13-0.1.jar ...
+[debug] Input file mappings:
+[debug] 	com
+[debug] 	  D:\Documents\projects\evolution\scala\target\scala-2.13\classes\com
+[debug] 	com\evolutiongaming
+[debug] 	  D:\Documents\projects\evolution\scala\target\scala-2.13\classes\com\evolutiongaming
+[debug] 	com\evolutiongaming\bootcamp
+[debug] 	  D:\Documents\projects\evolution\scala\target\scala-2.13\classes\com\evolutiongaming\bootcamp
+[debug] 	com\evolutiongaming\bootcamp\TexasHoldem$.class
+[debug] 	  D:\Documents\projects\evolution\scala\target\scala-2.13\classes\com\evolutiongaming\bootcamp\TexasHoldem$.class
+[debug] 	com\evolutiongaming\bootcamp\TexasHoldem$rankedHand.class
+[debug] 	  D:\Documents\projects\evolution\scala\target\scala-2.13\classes\com\evolutiongaming\bootcamp\TexasHoldem$rankedHand.class
+[debug] 	com\evolutiongaming\bootcamp\TexasHoldem.class
+[debug] 	  D:\Documents\projects\evolution\scala\target\scala-2.13\classes\com\evolutiongaming\bootcamp\TexasHoldem.class
+[debug] 	META-INF
+[debug] 	  D:\Documents\projects\evolution\scala\target\scala-2.13\classes\META-INF
+[debug] 	META-INF\scala.kotlin_module
+[debug] 	  D:\Documents\projects\evolution\scala\target\scala-2.13\classes\META-INF\scala.kotlin_module
+[debug] Done packaging.

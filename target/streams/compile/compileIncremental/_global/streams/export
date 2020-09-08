@@ -1,0 +1,1 @@
+scalac -bootclasspath C:\Users\MJ00241\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.3\scala-library-2.13.3.jar -classpath D:\Documents\projects\evolution\scala\target\scala-2.13\classes D:\Documents\projects\evolution\scala\src\main\scala\com\evolutiongaming\bootcamp\TexasHoldem.scala
