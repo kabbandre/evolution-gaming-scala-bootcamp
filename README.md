@@ -20,19 +20,22 @@ sbt:scala> compile
 ```
 4. Run the program
 ```$sbt
-sbt:scala> run```
+sbt:scala> run
+```
 
 5. Input data
 
 ```4cKs4h8s7s Ad4s Ac4d As9s KhKd 5d6d
-2h3h4h5d8d KdKs 9hJh```
+2h3h4h5d8d KdKs 9hJh
+```
 
 6. Input empty line to end the stdin loop
 
 7. Output:
 
 ```Ac4d=Ad4s 5d6d As9s KhKd
-KdKs 9hJh```
+KdKs 9hJh
+```
 
 ## Options
 
@@ -41,6 +44,7 @@ KdKs 9hJh```
 This implementation supports Omaha Holdem Poker. To run the program in omaha mode, type:
 
 ```$sbt
-sbt:scala> run --omaha```
+sbt:scala> run --omaha
+```
 
 Made by Mihails Jeremejevs (kabbandre@gmail.com)
