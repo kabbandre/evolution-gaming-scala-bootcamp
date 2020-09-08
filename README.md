@@ -8,7 +8,7 @@ This is my implementation of the home task I was given.
 
 ## Usage
 
-1. Open terminal in the project directory, where the build.sbt file is.
+1. Open terminal in the project directory, where the `build.sbt` file is.
 2. Start sbt shell
 ```
 $ sbt
@@ -39,8 +39,7 @@ KdKs 9hJh
 
 ### --omaha
 
-This implementation supports Omaha Holdem Poker. To run the program in omaha mode, type:
-
+This implementation also supports Omaha Holdem Poker. To run the program in omaha mode, type:
 ```
 $ sbt
 sbt:scala> run --omaha
