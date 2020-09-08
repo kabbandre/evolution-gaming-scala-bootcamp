@@ -37,7 +37,7 @@ KdKs 9hJh
 ```
 ## Options
 
-### --omaha
+### `--omaha`
 
 This implementation also supports Omaha Holdem Poker. To run the program in omaha mode, type:
 ```
