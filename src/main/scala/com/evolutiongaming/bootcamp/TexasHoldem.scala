@@ -236,8 +236,8 @@ object TexasHoldem {
       omaha = true
       handSize = 4
     }
-    val Tables = Iterator.continually(scala.io.StdIn.readLine()).takeWhile(_ != "").mkString("\n").split("\n")
-    for (table <- Tables)
+//    val Tables = Iterator.continually(scala.io.StdIn.readLine()).takeWhile(_ != "").mkString("\n").split("\n")
+    for (table <- io.Source.stdin.getLines)
       if (isValid(table))
         holdem(table)
   }
