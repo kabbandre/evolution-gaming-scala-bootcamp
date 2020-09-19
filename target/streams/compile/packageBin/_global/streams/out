@@ -1,1 +1,15 @@
-[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: /mnt/d/Documents/projects/evolution/scala/target/scala-2.13/scala_2.13-0.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /mnt/d/Documents/projects/evolution/scala/target/scala-2.13/scala_2.13-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /mnt/d/Documents/projects/evolution/scala/target/scala-2.13/classes/com[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/evolutiongaming[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /mnt/d/Documents/projects/evolution/scala/target/scala-2.13/classes/com/evolutiongaming[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/evolutiongaming/bootcamp[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /mnt/d/Documents/projects/evolution/scala/target/scala-2.13/classes/com/evolutiongaming/bootcamp[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/evolutiongaming/bootcamp/TexasHoldem$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /mnt/d/Documents/projects/evolution/scala/target/scala-2.13/classes/com/evolutiongaming/bootcamp/TexasHoldem$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/evolutiongaming/bootcamp/TexasHoldem$rankedHand.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /mnt/d/Documents/projects/evolution/scala/target/scala-2.13/classes/com/evolutiongaming/bootcamp/TexasHoldem$rankedHand.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/evolutiongaming/bootcamp/TexasHoldem.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /mnt/d/Documents/projects/evolution/scala/target/scala-2.13/classes/com/evolutiongaming/bootcamp/TexasHoldem.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

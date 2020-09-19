@@ -7,12 +7,9 @@ import scala.collection.mutable.ListBuffer
 
 object TexasHoldem {
   class rankedHand(val cards: String, val rank: Int, val strength: Double, val combo: Array[String]) {
-    override def toString = {
-      def joinme(combo: Array[String]): String = {
-        combo.mkString("")
-      }
-      val heya = joinme(combo)
-      s"($cards, $rank, $strength, $heya)"
+    override def toString: String = {
+      val heya = combo.mkString("")
+      s"$cards, $rank, $strength, $heya"
     }
   }
 
@@ -90,33 +87,23 @@ object TexasHoldem {
     suitKindsCheck(Combination, List(2, 1, 1, 1))
   }
 
+  def combinationSort(s1: String, s2: String): Boolean = {
+    Ratings(s1.charAt(0).toString) > Ratings(s2.charAt(0).toString)
+  }
+  def occurrencesSort(s1: String, s2: String, allCards: String): Boolean = {
+    allCards.count(_ == s1.charAt(0)) >= allCards.count(_ == s2.charAt(0))
+  }
+
   def handStrength(Combination: Array[String]): Double = {
-    val ratingSet = createRatingSet(Combination)
-    val AllCards = Combination.mkString("")
-    var ratingOccurrences = 0
-    val values = Array.fill(ratingSet.size)(0.0)
-    for (rating <- ratingSet) {
-      if (AllCards.count(_ == rating) >= ratingOccurrences && Ratings(rating.toString) > values(0) || (ratingSet.size == 5 && Ratings(rating.toString) > values(0))) {
-        values(0) = Ratings(rating.toString)
-        ratingOccurrences = AllCards.count(_ == rating)
-      }
+    var str = ""
+    val allCards = Combination.mkString("")
+    val newCombination = Combination.sortWith(combinationSort).sortWith(occurrencesSort(_, _, allCards))
+    for (card <- newCombination) {
+      val r = Ratings(card.charAt(0).toString)
+      val v = if (r < 10) s"0$r" else r.toString
+      str += v
     }
-    if (ratingSet.size > 1)
-      for (i <- 1 until values.length) {
-        ratingOccurrences = 0
-        for (rating <- ratingSet)
-          if (Ratings(rating.toString) < values(i - 1) && values(i) < Ratings(rating.toString) && AllCards.count(_ == rating) >= ratingOccurrences) {
-            ratingOccurrences = AllCards.count(_ == rating)
-            values(i) = Ratings(rating.toString) * ratingOccurrences
-          }
-      }
-    var handValue: Double = 0
-    var multiplier: Double = 1
-    for (i <- values.indices) {
-      handValue += values(i) * multiplier
-      multiplier *= 0.01
-    }
-    handValue
+    str.toDouble
   }
 
   def evaluate(BoardCards: Array[String], Hand: String): rankedHand = {
@@ -219,6 +206,7 @@ object TexasHoldem {
         if (!hand.matches(regex)) print(hand + " (has invalid cards) ")
         else if (hand.length < handSize * 2) print(hand + s" (has less than $handSize cards) ")
         else if (hand.length > handSize * 2) print(hand + s" (has more than $handSize cards) ")
+      println()
       return false
     }
     var allCards = splitCards(Board)
@@ -236,7 +224,6 @@ object TexasHoldem {
       omaha = true
       handSize = 4
     }
-//    val Tables = Iterator.continually(scala.io.StdIn.readLine()).takeWhile(_ != "").mkString("\n").split("\n")
     for (table <- io.Source.stdin.getLines)
       if (isValid(table))
         holdem(table)
