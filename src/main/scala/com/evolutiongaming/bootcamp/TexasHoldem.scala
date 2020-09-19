@@ -214,6 +214,7 @@ object TexasHoldem {
     if (allCards.toSet.size != allCards.length) {
       print("There are duplicates of the cards on the table: ")
       allCards.diff(allCards.distinct).distinct.foreach(hand => print(hand + " "))
+      println()
       return false
     }
     true
