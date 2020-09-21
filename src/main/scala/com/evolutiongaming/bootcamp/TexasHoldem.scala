@@ -88,7 +88,7 @@ object TexasHoldem {
   }
 
   def combinationSort(s1: String, s2: String): Boolean = {
-    Ratings(s1.charAt(0).toString) > Ratings(s2.charAt(0).toString)
+    Ratings(s1.charAt(0).toString) < Ratings(s2.charAt(0).toString)
   }
   def occurrencesSort(s1: String, s2: String, allCards: String): Boolean = {
     allCards.count(_ == s1.charAt(0)) >= allCards.count(_ == s2.charAt(0))
@@ -129,7 +129,6 @@ object TexasHoldem {
 
     val output = new ListBuffer[rankedHand]()
     for (i <- allCombinations.indices) {
-      if ((allCombinations(i): ArraySeq[String]) != (BoardCards: ArraySeq[String])) {
         if (isStraightFlush(allCombinations(i)))
           output += new rankedHand(Hand, 9, handStrength(allCombinations(i)), allCombinations(i))
         else if (isFourOfKind(allCombinations(i)))
@@ -148,7 +147,6 @@ object TexasHoldem {
           output += new rankedHand(Hand, 2, handStrength(allCombinations(i)), allCombinations(i))
         else
           output += new rankedHand(Hand, 1, handStrength(allCombinations(i)), allCombinations(i))
-      }
     }
     output.maxBy(el => (el.rank, el.strength))
   }
