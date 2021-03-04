@@ -1,6 +1,6 @@
 # Evolution Gaming Scala Bootcamp Home Task
 
-This is my implementation of the home task I was given.
+This is my implementation of the home task I was given using Scala for the first time.
 
 ## Setup
 
